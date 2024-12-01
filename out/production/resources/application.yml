@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:lg-test
+    username: lg
+    password: laundryGo!
+    hikari:
+      maximum-pool-size: 4
+  h2:
+    console:
+      enabled: true
+mybatis:
+  mapper-locations: mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    root: info
+    com.laundrygo.shorturl.repository: debug
